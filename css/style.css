@@ -1,0 +1,46 @@
+#pin-it-btn {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#pin-it-btn:hover {
+  opacity: 0.8;
+}
+
+#pin-it-btn svg {
+  margin-right: 5px;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+
+#pin-it-btn[style*="border-radius: 50%"] {
+  padding: 0 !important;
+}
+
+#pin-it-btn[style*="border-radius: 50%"] svg {
+  margin-right: 0;
+}
+
+#pin-it-btn[style*="border-radius: 50%"] span {
+  display: none;
+}
+#pin-it-btn {
+    text-transform: none !important;
+}
+
+#pin-it-btn span {
+    text-transform: none !important;
+}
+
+#pin-it-btn[data-pin-text="pin-it"] span::first-letter,
+#pin-it-btn[data-pin-text="save"] span::first-letter {
+    text-transform: uppercase !important;
+}
+
+#pin-it-btn[data-pin-text="pin-it"] span::nth-letter(2),
+#pin-it-btn[data-pin-text="save"] span::nth-letter(2),
+#pin-it-btn[data-pin-text="save"] span::nth-letter(3),
+#pin-it-btn[data-pin-text="save"] span::nth-letter(4) {
+    text-transform: lowercase !important;
+}
